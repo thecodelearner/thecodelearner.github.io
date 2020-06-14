@@ -69,7 +69,7 @@ var files = (function () {
 	};
 	Singleton.defaultOptions = {
 
-		"about": "\nWhen I was just 12, I found out about computers and immediately there ignited a spark, a keen interest of the functioning of a computer inside me. This interest built-up over time to fuel my extreme interests in programming, and I started experimenting on my own over it.\n\nSince then, I have always been intrigued to keep developing something using electronics and have developed quite some useful stuff (which will be out on my portfolio soon).\n\nI plan to keep innovating more with the aid of artificial intelligence, micro-computing and cloud technologies.",
+		"about": "\nWhen I was just 12, I found out about computers and immediately there ignited a spark, a keen interest of the functioning of a computer inside me. This interest built-up over time to fuel my extreme interests in programming, and I started experimenting on my own over it.\n\nSince then, I have always been intrigued to keep developing something using electronics/computers and have developed quite some useful stuff (which will be out on my portfolio soon).\n\nI plan to keep innovating more with the aid of artificial intelligence, micro-computing and cloud technologies.",
 
 		"interests": "\nMy interests include:\n- Algorithms, Backtracking and debugging.\n- ReactJS, MySQL, MongoDB, Firebase. (FERN/MERN Stack)\n- Linux, bash/shell scripting.\n- Agile app development.\n- Micro processor/controller programming (RPi / Arduino / NodeMCU)\n- Reverse Engineering software or hardware devices.\n\nOther than Technical know-how, I also take interest in:\n- Stand-up Comedy.\n- Making short films (Video film editing).\n- Any other funny stuff. \n\ndevelopment guide: clean code, always.\n",
 
