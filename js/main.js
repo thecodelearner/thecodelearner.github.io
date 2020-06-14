@@ -73,7 +73,7 @@ var files = (function () {
 
 		"interests": "\nMy interests include:\n- Algorithms, Backtracking and debugging.\n- ReactJS, MySQL, MongoDB, Firebase. (FERN/MERN Stack)\n- Linux, bash/shell scripting.\n- Agile app development.\n- Micro processor/controller programming (RPi / Arduino / NodeMCU)\n- Reverse Engineering software or hardware devices.\n\nOther than Technical know-how, I also take interest in:\n- Stand-up Comedy.\n- Making short films (Video film editing).\n- Any other funny stuff. \n\ndevelopment guide: clean code, always.\n",
 
-		"academic_Info": "\n2018 - 2021, Pune University, Bachelor's degree in Computer Engineering\nMain subjects:\n- Advanced Programming\n- Artificial Intelligence\n- Cloud Computing with Internet of Things\n- Databases (NoSQL)\n\n2015 - 2018, Mumbai University, Diploma in Computer Engineering\nMain subjects:\n- Software Engineering\n- Software Quality Assurance/Testing\n- Object Oriented Programming\n- Mobile Computing\n- Databases (SQL)\n- Operating Systems\n- Computer Networks\n",
+		"academic_Info": "\n2018 - 2021, Pune University, Bachelor's degree in Computer Engineering\nMain subjects:\n- Advanced Programming\n- Artificial Intelligence\n- Cloud Computing\n- Internet of Things\n- Databases (NoSQL)\n\n2015 - 2018, Mumbai University, Diploma in Computer Engineering\nMain subjects:\n- Software Engineering\n- Software Quality Assurance/Testing\n- Object Oriented Programming\n- Mobile Computing\n- Databases (SQL)\n- Operating Systems\n- Computer Networks\n",
 
 		"linkedin": "https://www.linkedin.com/in/sahilsanghavi/",
 		"github": "https://github.com/thecodelearner/",
