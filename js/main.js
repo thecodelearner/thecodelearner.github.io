@@ -79,7 +79,7 @@ var files = (function () {
 		"github": "https://github.com/thecodelearner/",
 		"instagram": "https://instagram.com/zeductio/",
 		"contact": "biosfood@protonmail.com",
-		"resume": "https://sahil-cvportfolio.web.app/res/resume.pdf"
+		"resume": "https://sahil-cvportfolio.web.app/sahil-resume-2020.pdf"
 	};
 	return {
 		getInstance: function (options) {
