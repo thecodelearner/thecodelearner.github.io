@@ -1,0 +1,52 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="VIS/dist/vis.js"></script>
+      <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+      var nodes = [{'group': 'Event', 'id': 85, 'label': 'Bangalore'}, {'group': 'Event', 'id': 1, 'label': 'frequency'}, {'group': 'Event', 'id': 84, 'label': 'Moongate'}, {'group': 'Event', 'id': 39, 'label': 'Person'}, {'group': 'Event', 'id': 81, 'label': 'Suraj'}, {'group': 'Event', 'id': 41, 'label': 'Organization'}, {'group': 'Event', 'id': 75, 'label': 'Akshatha'}, {'group': 'Event', 'id': 23, 'label': 'Location'}, {'group': 'Event', 'id': 52, 'label': 'Akshata'}, {'group': 'Event', 'id': 76, 'label': 'Moon'}, {'group': 'Event', 'id': 16, 'label': 'Opa'}, {'group': 'Event', 'id': 20, 'label': "Suraj & Akshatha Rai's"}, {'group': 'Event', 'id': 22, 'label': 'Telugu'}, {'group': 'Event', 'id': 24, 'label': 'decor'}, {'group': 'Event', 'id': 28, 'label': 'Haldi'}, {'group': 'Event', 'id': 30, 'label': 'Green Fields'}, {'group': 'Event', 'id': 32, 'label': 'Toggle'}, {'group': 'Event', 'id': 34, 'label': 'MOONGATE'}, {'group': 'Event', 'id': 63, 'label': 'Ajilady'}, {'group': 'Event', 'id': 65, 'label': 'Sudhakar Rai'}, {'group': 'Event', 'id': 68, 'label': 'Suraj Rai'}];
+      var edges = [{'from': 85, 'label': '', 'to': 1}, {'from': 84, 'label': '', 'to': 39}, {'from': 81, 'label': '', 'to': 39}, {'from': 84, 'label': '', 'to': 41}, {'from': 75, 'label': '', 'to': 23}, {'from': 85, 'label': '', 'to': 23}, {'from': 52, 'label': '', 'to': 41}, {'from': 76, 'label': '', 'to': 39}, {'from': 16, 'label': '', 'to': 39}, {'from': 85, 'label': '', 'to': 41}, {'from': 20, 'label': '', 'to': 41}, {'from': 22, 'label': '', 'to': 23}, {'from': 24, 'label': '', 'to': 41}, {'from': 75, 'label': '', 'to': 41}, {'from': 28, 'label': '', 'to': 39}, {'from': 30, 'label': '', 'to': 39}, {'from': 32, 'label': '', 'to': 41}, {'from': 34, 'label': '', 'to': 39}, {'from': 63, 'label': '', 'to': 39}, {'from': 65, 'label': '', 'to': 39}, {'from': 68, 'label': '', 'to': 41}, {'from': 75, 'label': '', 'to': 81}, {'from': 81, 'label': '', 'to': 75}, {'from': 81, 'label': '', 'to': 84}, {'from': 84, 'label': '', 'to': 81}, {'from': 81, 'label': '', 'to': 52}, {'from': 52, 'label': '', 'to': 81}, {'from': 63, 'label': '', 'to': 65}, {'from': 63, 'label': '', 'to': 84}, {'from': 65, 'label': '', 'to': 63}, {'from': 65, 'label': '', 'to': 84}, {'from': 84, 'label': '', 'to': 63}, {'from': 84, 'label': '', 'to': 65}, {'from': 75, 'label': '', 'to': 68}, {'from': 68, 'label': '', 'to': 75}, {'from': 75, 'label': '', 'to': 76}, {'from': 81, 'label': '', 'to': 76}, {'from': 76, 'label': '', 'to': 75}, {'from': 76, 'label': '', 'to': 81}, {'from': 81, 'label': '', 'to': 84}, {'from': 84, 'label': '', 'to': 81}, {'from': 85, 'label': '', 'to': 84}, {'from': 84, 'label': '', 'to': 85}];
+
+      var container = document.getElementById("VIS_draw");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'circle',
+              size: 15,
+              font: {
+                  size: 15
+              }
+          },
+          edges: {
+              font: {
+                  size: 10,
+                  align: 'center'
+              },
+              color: 'red',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 1.2}
+              },
+              smooth: {enabled: true}
+          },
+          physics: {
+              enabled: true
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    

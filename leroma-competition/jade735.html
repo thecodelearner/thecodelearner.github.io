@@ -1,0 +1,52 @@
+
+    <html>
+    <head>
+      <script type="text/javascript" src="VIS/dist/vis.js"></script>
+      <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+      var nodes = [{'group': 'Event', 'id': 14, 'label': 'Maintained'}, {'group': 'Event', 'id': 9, 'label': 'keyword'}, {'group': 'Event', 'id': 16, 'label': 'Changing'}, {'group': 'Event', 'id': 10, 'label': 'Rights'}, {'group': 'Event', 'id': 12, 'label': 'Reserved'}, {'group': 'Event', 'id': 18, 'label': 'Tree'}, {'group': 'Event', 'id': 19, 'label': 'frequency'}, {'group': 'Event', 'id': 20, 'label': 'Wellness'}, {'group': 'Event', 'id': 59, 'label': 'Organization'}, {'group': 'Event', 'id': 22, 'label': 'TERMS & CONDITIONS'}, {'group': 'Event', 'id': 24, 'label': 'Suresh Shetty'}, {'group': 'Event', 'id': 55, 'label': 'Person'}, {'group': 'Event', 'id': 26, 'label': 'Jade Hospitainment'}, {'group': 'Event', 'id': 110, 'label': 'Jade'}, {'group': 'Event', 'id': 30, 'label': 'India'}, {'group': 'Event', 'id': 41, 'label': 'Location'}, {'group': 'Event', 'id': 63, 'label': 'Chef Gaurav Guha'}, {'group': 'Event', 'id': 34, 'label': 'Jade 735'}, {'group': 'Event', 'id': 36, 'label': 'Nandi'}, {'group': 'Event', 'id': 38, 'label': 'Music & Entertainment'}, {'group': 'Event', 'id': 111, 'label': 'Nandi Hills'}, {'group': 'Event', 'id': 42, 'label': 'Tripadvisor'}, {'group': 'Event', 'id': 66, 'label': 'Mozilla Firefox'}, {'group': 'Event', 'id': 67, 'label': 'Google Chrome'}, {'group': 'Event', 'id': 106, 'label': 'Devanhalli Photos Devanhalli'}, {'group': 'Event', 'id': 50, 'label': 'Devanhalli Hotels Devanhalli Hotel Deals Hotels'}, {'group': 'Event', 'id': 107, 'label': 'Devanhalli Business Hotels'}, {'group': 'Event', 'id': 101, 'label': 'Devanhalli Family Hotels'}, {'group': 'Event', 'id': 105, 'label': 'Devanhalli Spa Resorts'}, {'group': 'Event', 'id': 103, 'label': 'Devanhalli Romantic Hotels'}];
+      var edges = [{'from': 14, 'label': '', 'to': 9}, {'from': 16, 'label': '', 'to': 9}, {'from': 10, 'label': '', 'to': 9}, {'from': 12, 'label': '', 'to': 9}, {'from': 18, 'label': '', 'to': 9}, {'from': 10, 'label': '', 'to': 19}, {'from': 12, 'label': '', 'to': 19}, {'from': 14, 'label': '', 'to': 19}, {'from': 16, 'label': '', 'to': 19}, {'from': 18, 'label': '', 'to': 19}, {'from': 20, 'label': '', 'to': 59}, {'from': 22, 'label': '', 'to': 59}, {'from': 24, 'label': '', 'to': 55}, {'from': 26, 'label': '', 'to': 55}, {'from': 110, 'label': '', 'to': 55}, {'from': 30, 'label': '', 'to': 41}, {'from': 63, 'label': '', 'to': 55}, {'from': 34, 'label': '', 'to': 55}, {'from': 36, 'label': '', 'to': 41}, {'from': 38, 'label': '', 'to': 59}, {'from': 111, 'label': '', 'to': 41}, {'from': 42, 'label': '', 'to': 59}, {'from': 66, 'label': '', 'to': 55}, {'from': 67, 'label': '', 'to': 55}, {'from': 106, 'label': '', 'to': 55}, {'from': 50, 'label': '', 'to': 59}, {'from': 107, 'label': '', 'to': 59}, {'from': 101, 'label': '', 'to': 55}, {'from': 105, 'label': '', 'to': 59}, {'from': 103, 'label': '', 'to': 59}, {'from': 63, 'label': '', 'to': 110}, {'from': 110, 'label': '', 'to': 63}, {'from': 67, 'label': '', 'to': 66}, {'from': 66, 'label': '', 'to': 67}, {'from': 101, 'label': '', 'to': 103}, {'from': 101, 'label': '', 'to': 105}, {'from': 101, 'label': '', 'to': 107}, {'from': 101, 'label': '', 'to': 106}, {'from': 103, 'label': '', 'to': 101}, {'from': 103, 'label': '', 'to': 105}, {'from': 103, 'label': '', 'to': 107}, {'from': 103, 'label': '', 'to': 106}, {'from': 105, 'label': '', 'to': 101}, {'from': 105, 'label': '', 'to': 103}, {'from': 105, 'label': '', 'to': 107}, {'from': 105, 'label': '', 'to': 106}, {'from': 107, 'label': '', 'to': 101}, {'from': 107, 'label': '', 'to': 103}, {'from': 107, 'label': '', 'to': 105}, {'from': 107, 'label': '', 'to': 106}, {'from': 106, 'label': '', 'to': 101}, {'from': 106, 'label': '', 'to': 103}, {'from': 106, 'label': '', 'to': 105}, {'from': 106, 'label': '', 'to': 107}, {'from': 111, 'label': '', 'to': 110}, {'from': 110, 'label': '', 'to': 111}];
+
+      var container = document.getElementById("VIS_draw");
+
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+
+      var options = {
+          nodes: {
+              shape: 'circle',
+              size: 15,
+              font: {
+                  size: 15
+              }
+          },
+          edges: {
+              font: {
+                  size: 10,
+                  align: 'center'
+              },
+              color: 'red',
+              arrows: {
+                  to: {enabled: true, scaleFactor: 1.2}
+              },
+              smooth: {enabled: true}
+          },
+          physics: {
+              enabled: true
+          }
+      };
+
+      var network = new vis.Network(container, data, options);
+
+    </script>
+    </body>
+    </html>
+    
