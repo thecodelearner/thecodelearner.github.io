@@ -1,52 +1,55 @@
+<html>
 
-    <html>
-    <head>
-      <script type="text/javascript" src="VIS/dist/vis.js"></script>
-      <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
+<head>
+    <script type="text/javascript" src="VIS/dist/vis.js"></script>
+    <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 
+<body>
+
+
+    <img src="freq-dists/happy-retreats.png">
     <div id="VIS_draw"></div>
 
     <script type="text/javascript">
-      var nodes = [{'group': 'Event', 'id': 52, 'label': 'believe'}, {'group': 'Event', 'id': 19, 'label': 'keyword'}, {'group': 'Event', 'id': 58, 'label': 'run'}, {'group': 'Event', 'id': 46, 'label': 'built'}, {'group': 'Event', 'id': 56, 'label': 'win'}, {'group': 'Event', 'id': 48, 'label': 'service'}, {'group': 'Event', 'id': 50, 'label': 'element'}, {'group': 'Event', 'id': 44, 'label': 'properties'}, {'group': 'Event', 'id': 60, 'label': 'says'}, {'group': 'Event', 'id': 197, 'label': 'Gowriraju'}, {'group': 'Event', 'id': 54, 'label': 'will'}, {'group': 'Event', 'id': 21, 'label': 'was engineer'}, {'group': 'Event', 'id': 23, 'label': 'heard'}, {'group': 'Event', 'id': 25, 'label': 'took property'}, {'group': 'Event', 'id': 27, 'label': 'explains'}, {'group': 'Event', 'id': 29, 'label': 'want'}, {'group': 'Event', 'id': 33, 'label': 'betting'}, {'group': 'Event', 'id': 36, 'label': 'we'}, {'group': 'Event', 'id': 38, 'label': 'this'}, {'group': 'Event', 'id': 42, 'label': 'reason'}, {'group': 'Event', 'id': 61, 'label': 'frequency'}, {'group': 'Event', 'id': 62, 'label': 'My Account Signed'}, {'group': 'Event', 'id': 101, 'label': 'Person'}, {'group': 'Event', 'id': 196, 'label': 'Happy Retreats'}, {'group': 'Event', 'id': 192, 'label': 'Nagula'}, {'group': 'Event', 'id': 143, 'label': 'White Mist'}, {'group': 'Event', 'id': 99, 'label': 'Organization'}, {'group': 'Event', 'id': 193, 'label': 'Bengaluru'}, {'group': 'Event', 'id': 180, 'label': 'Town'}, {'group': 'Event', 'id': 95, 'label': 'Location'}, {'group': 'Event', 'id': 176, 'label': 'Hollywood Junction'}, {'group': 'Event', 'id': 165, 'label': 'Sadahalli Post'}, {'group': 'Event', 'id': 82, 'label': 'Validity'}, {'group': 'Event', 'id': 84, 'label': 'the Happy Retreats Member Club'}, {'group': 'Event', 'id': 86, 'label': 'Pradeep & Nag'}, {'group': 'Event', 'id': 88, 'label': 'Whatsapp'}, {'group': 'Event', 'id': 90, 'label': 'Bangalore'}, {'group': 'Event', 'id': 145, 'label': 'Villa Ayana'}, {'group': 'Event', 'id': 144, 'label': 'Nandi Hills'}, {'group': 'Event', 'id': 96, 'label': 'weekend getaways'}, {'group': 'Event', 'id': 181, 'label': 'Villa no.873'}, {'group': 'Event', 'id': 179, 'label': 'Karnataka 562110Ph'}];
-      var edges = [{'from': 52, 'label': '', 'to': 19}, {'from': 58, 'label': '', 'to': 19}, {'from': 46, 'label': '', 'to': 19}, {'from': 56, 'label': '', 'to': 19}, {'from': 48, 'label': '', 'to': 19}, {'from': 50, 'label': '', 'to': 19}, {'from': 44, 'label': '', 'to': 19}, {'from': 60, 'label': '', 'to': 19}, {'from': 197, 'label': '', 'to': 19}, {'from': 54, 'label': '', 'to': 19}, {'from': 197, 'label': '', 'to': 21}, {'from': 197, 'label': '', 'to': 23}, {'from': 197, 'label': '', 'to': 25}, {'from': 197, 'label': '', 'to': 27}, {'from': 197, 'label': '', 'to': 29}, {'from': 197, 'label': '', 'to': 60}, {'from': 197, 'label': '', 'to': 33}, {'from': 44, 'label': '', 'to': 46}, {'from': 36, 'label': '', 'to': 52}, {'from': 38, 'label': '', 'to': 56}, {'from': 197, 'label': '', 'to': 60}, {'from': 42, 'label': '', 'to': 61}, {'from': 44, 'label': '', 'to': 61}, {'from': 46, 'label': '', 'to': 61}, {'from': 48, 'label': '', 'to': 61}, {'from': 50, 'label': '', 'to': 61}, {'from': 52, 'label': '', 'to': 61}, {'from': 54, 'label': '', 'to': 61}, {'from': 56, 'label': '', 'to': 61}, {'from': 58, 'label': '', 'to': 61}, {'from': 60, 'label': '', 'to': 61}, {'from': 62, 'label': '', 'to': 101}, {'from': 196, 'label': '', 'to': 101}, {'from': 197, 'label': '', 'to': 101}, {'from': 192, 'label': '', 'to': 101}, {'from': 143, 'label': '', 'to': 99}, {'from': 193, 'label': '', 'to': 101}, {'from': 180, 'label': '', 'to': 95}, {'from': 176, 'label': '', 'to': 95}, {'from': 165, 'label': '', 'to': 99}, {'from': 193, 'label': '', 'to': 99}, {'from': 82, 'label': '', 'to': 99}, {'from': 84, 'label': '', 'to': 99}, {'from': 86, 'label': '', 'to': 99}, {'from': 88, 'label': '', 'to': 99}, {'from': 90, 'label': '', 'to': 95}, {'from': 145, 'label': '', 'to': 101}, {'from': 144, 'label': '', 'to': 95}, {'from': 96, 'label': '', 'to': 101}, {'from': 181, 'label': '', 'to': 99}, {'from': 179, 'label': '', 'to': 101}, {'from': 197, 'label': '', 'to': 192}, {'from': 192, 'label': '', 'to': 197}, {'from': 165, 'label': '', 'to': 193}, {'from': 165, 'label': '', 'to': 176}, {'from': 165, 'label': '', 'to': 180}, {'from': 193, 'label': '', 'to': 165}, {'from': 193, 'label': '', 'to': 176}, {'from': 193, 'label': '', 'to': 180}, {'from': 176, 'label': '', 'to': 165}, {'from': 176, 'label': '', 'to': 193}, {'from': 176, 'label': '', 'to': 180}, {'from': 180, 'label': '', 'to': 165}, {'from': 180, 'label': '', 'to': 193}, {'from': 180, 'label': '', 'to': 176}, {'from': 143, 'label': '', 'to': 196}, {'from': 196, 'label': '', 'to': 143}, {'from': 143, 'label': '', 'to': 145}, {'from': 143, 'label': '', 'to': 144}, {'from': 145, 'label': '', 'to': 143}, {'from': 145, 'label': '', 'to': 144}, {'from': 144, 'label': '', 'to': 143}, {'from': 144, 'label': '', 'to': 145}, {'from': 165, 'label': '', 'to': 179}, {'from': 165, 'label': '', 'to': 181}, {'from': 193, 'label': '', 'to': 179}, {'from': 193, 'label': '', 'to': 181}, {'from': 179, 'label': '', 'to': 165}, {'from': 179, 'label': '', 'to': 193}, {'from': 179, 'label': '', 'to': 181}, {'from': 179, 'label': '', 'to': 176}, {'from': 179, 'label': '', 'to': 180}, {'from': 181, 'label': '', 'to': 165}, {'from': 181, 'label': '', 'to': 193}, {'from': 181, 'label': '', 'to': 179}, {'from': 181, 'label': '', 'to': 176}, {'from': 181, 'label': '', 'to': 180}, {'from': 176, 'label': '', 'to': 179}, {'from': 176, 'label': '', 'to': 181}, {'from': 180, 'label': '', 'to': 179}, {'from': 180, 'label': '', 'to': 181}, {'from': 196, 'label': '', 'to': 193}, {'from': 193, 'label': '', 'to': 196}, {'from': 197, 'label': '', 'to': 193}, {'from': 193, 'label': '', 'to': 197}, {'from': 193, 'label': '', 'to': 192}, {'from': 192, 'label': '', 'to': 193}, {'from': 197, 'label': '', 'to': 196}, {'from': 196, 'label': '', 'to': 197}];
+        var nodes = [{ 'group': 'Event', 'id': 52, 'label': 'believe' }, { 'group': 'Event', 'id': 19, 'label': 'keyword' }, { 'group': 'Event', 'id': 58, 'label': 'run' }, { 'group': 'Event', 'id': 46, 'label': 'built' }, { 'group': 'Event', 'id': 56, 'label': 'win' }, { 'group': 'Event', 'id': 48, 'label': 'service' }, { 'group': 'Event', 'id': 50, 'label': 'element' }, { 'group': 'Event', 'id': 44, 'label': 'properties' }, { 'group': 'Event', 'id': 60, 'label': 'says' }, { 'group': 'Event', 'id': 197, 'label': 'Gowriraju' }, { 'group': 'Event', 'id': 54, 'label': 'will' }, { 'group': 'Event', 'id': 21, 'label': 'was engineer' }, { 'group': 'Event', 'id': 23, 'label': 'heard' }, { 'group': 'Event', 'id': 25, 'label': 'took property' }, { 'group': 'Event', 'id': 27, 'label': 'explains' }, { 'group': 'Event', 'id': 29, 'label': 'want' }, { 'group': 'Event', 'id': 33, 'label': 'betting' }, { 'group': 'Event', 'id': 36, 'label': 'we' }, { 'group': 'Event', 'id': 38, 'label': 'this' }, { 'group': 'Event', 'id': 42, 'label': 'reason' }, { 'group': 'Event', 'id': 61, 'label': 'frequency' }, { 'group': 'Event', 'id': 62, 'label': 'My Account Signed' }, { 'group': 'Event', 'id': 101, 'label': 'Person' }, { 'group': 'Event', 'id': 196, 'label': 'Happy Retreats' }, { 'group': 'Event', 'id': 192, 'label': 'Nagula' }, { 'group': 'Event', 'id': 143, 'label': 'White Mist' }, { 'group': 'Event', 'id': 99, 'label': 'Organization' }, { 'group': 'Event', 'id': 193, 'label': 'Bengaluru' }, { 'group': 'Event', 'id': 180, 'label': 'Town' }, { 'group': 'Event', 'id': 95, 'label': 'Location' }, { 'group': 'Event', 'id': 176, 'label': 'Hollywood Junction' }, { 'group': 'Event', 'id': 165, 'label': 'Sadahalli Post' }, { 'group': 'Event', 'id': 82, 'label': 'Validity' }, { 'group': 'Event', 'id': 84, 'label': 'the Happy Retreats Member Club' }, { 'group': 'Event', 'id': 86, 'label': 'Pradeep & Nag' }, { 'group': 'Event', 'id': 88, 'label': 'Whatsapp' }, { 'group': 'Event', 'id': 90, 'label': 'Bangalore' }, { 'group': 'Event', 'id': 145, 'label': 'Villa Ayana' }, { 'group': 'Event', 'id': 144, 'label': 'Nandi Hills' }, { 'group': 'Event', 'id': 96, 'label': 'weekend getaways' }, { 'group': 'Event', 'id': 181, 'label': 'Villa no.873' }, { 'group': 'Event', 'id': 179, 'label': 'Karnataka 562110Ph' }];
+        var edges = [{ 'from': 52, 'label': '', 'to': 19 }, { 'from': 58, 'label': '', 'to': 19 }, { 'from': 46, 'label': '', 'to': 19 }, { 'from': 56, 'label': '', 'to': 19 }, { 'from': 48, 'label': '', 'to': 19 }, { 'from': 50, 'label': '', 'to': 19 }, { 'from': 44, 'label': '', 'to': 19 }, { 'from': 60, 'label': '', 'to': 19 }, { 'from': 197, 'label': '', 'to': 19 }, { 'from': 54, 'label': '', 'to': 19 }, { 'from': 197, 'label': '', 'to': 21 }, { 'from': 197, 'label': '', 'to': 23 }, { 'from': 197, 'label': '', 'to': 25 }, { 'from': 197, 'label': '', 'to': 27 }, { 'from': 197, 'label': '', 'to': 29 }, { 'from': 197, 'label': '', 'to': 60 }, { 'from': 197, 'label': '', 'to': 33 }, { 'from': 44, 'label': '', 'to': 46 }, { 'from': 36, 'label': '', 'to': 52 }, { 'from': 38, 'label': '', 'to': 56 }, { 'from': 197, 'label': '', 'to': 60 }, { 'from': 42, 'label': '', 'to': 61 }, { 'from': 44, 'label': '', 'to': 61 }, { 'from': 46, 'label': '', 'to': 61 }, { 'from': 48, 'label': '', 'to': 61 }, { 'from': 50, 'label': '', 'to': 61 }, { 'from': 52, 'label': '', 'to': 61 }, { 'from': 54, 'label': '', 'to': 61 }, { 'from': 56, 'label': '', 'to': 61 }, { 'from': 58, 'label': '', 'to': 61 }, { 'from': 60, 'label': '', 'to': 61 }, { 'from': 62, 'label': '', 'to': 101 }, { 'from': 196, 'label': '', 'to': 101 }, { 'from': 197, 'label': '', 'to': 101 }, { 'from': 192, 'label': '', 'to': 101 }, { 'from': 143, 'label': '', 'to': 99 }, { 'from': 193, 'label': '', 'to': 101 }, { 'from': 180, 'label': '', 'to': 95 }, { 'from': 176, 'label': '', 'to': 95 }, { 'from': 165, 'label': '', 'to': 99 }, { 'from': 193, 'label': '', 'to': 99 }, { 'from': 82, 'label': '', 'to': 99 }, { 'from': 84, 'label': '', 'to': 99 }, { 'from': 86, 'label': '', 'to': 99 }, { 'from': 88, 'label': '', 'to': 99 }, { 'from': 90, 'label': '', 'to': 95 }, { 'from': 145, 'label': '', 'to': 101 }, { 'from': 144, 'label': '', 'to': 95 }, { 'from': 96, 'label': '', 'to': 101 }, { 'from': 181, 'label': '', 'to': 99 }, { 'from': 179, 'label': '', 'to': 101 }, { 'from': 197, 'label': '', 'to': 192 }, { 'from': 192, 'label': '', 'to': 197 }, { 'from': 165, 'label': '', 'to': 193 }, { 'from': 165, 'label': '', 'to': 176 }, { 'from': 165, 'label': '', 'to': 180 }, { 'from': 193, 'label': '', 'to': 165 }, { 'from': 193, 'label': '', 'to': 176 }, { 'from': 193, 'label': '', 'to': 180 }, { 'from': 176, 'label': '', 'to': 165 }, { 'from': 176, 'label': '', 'to': 193 }, { 'from': 176, 'label': '', 'to': 180 }, { 'from': 180, 'label': '', 'to': 165 }, { 'from': 180, 'label': '', 'to': 193 }, { 'from': 180, 'label': '', 'to': 176 }, { 'from': 143, 'label': '', 'to': 196 }, { 'from': 196, 'label': '', 'to': 143 }, { 'from': 143, 'label': '', 'to': 145 }, { 'from': 143, 'label': '', 'to': 144 }, { 'from': 145, 'label': '', 'to': 143 }, { 'from': 145, 'label': '', 'to': 144 }, { 'from': 144, 'label': '', 'to': 143 }, { 'from': 144, 'label': '', 'to': 145 }, { 'from': 165, 'label': '', 'to': 179 }, { 'from': 165, 'label': '', 'to': 181 }, { 'from': 193, 'label': '', 'to': 179 }, { 'from': 193, 'label': '', 'to': 181 }, { 'from': 179, 'label': '', 'to': 165 }, { 'from': 179, 'label': '', 'to': 193 }, { 'from': 179, 'label': '', 'to': 181 }, { 'from': 179, 'label': '', 'to': 176 }, { 'from': 179, 'label': '', 'to': 180 }, { 'from': 181, 'label': '', 'to': 165 }, { 'from': 181, 'label': '', 'to': 193 }, { 'from': 181, 'label': '', 'to': 179 }, { 'from': 181, 'label': '', 'to': 176 }, { 'from': 181, 'label': '', 'to': 180 }, { 'from': 176, 'label': '', 'to': 179 }, { 'from': 176, 'label': '', 'to': 181 }, { 'from': 180, 'label': '', 'to': 179 }, { 'from': 180, 'label': '', 'to': 181 }, { 'from': 196, 'label': '', 'to': 193 }, { 'from': 193, 'label': '', 'to': 196 }, { 'from': 197, 'label': '', 'to': 193 }, { 'from': 193, 'label': '', 'to': 197 }, { 'from': 193, 'label': '', 'to': 192 }, { 'from': 192, 'label': '', 'to': 193 }, { 'from': 197, 'label': '', 'to': 196 }, { 'from': 196, 'label': '', 'to': 197 }];
 
-      var container = document.getElementById("VIS_draw");
+        var container = document.getElementById("VIS_draw");
 
-      var data = {
-        nodes: nodes,
-        edges: edges
-      };
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
 
-      var options = {
-          nodes: {
-              shape: 'circle',
-              size: 15,
-              font: {
-                  size: 15
-              }
-          },
-          edges: {
-              font: {
-                  size: 10,
-                  align: 'center'
-              },
-              color: 'red',
-              arrows: {
-                  to: {enabled: true, scaleFactor: 1.2}
-              },
-              smooth: {enabled: true}
-          },
-          physics: {
-              enabled: true
-          }
-      };
+        var options = {
+            nodes: {
+                shape: 'circle',
+                size: 15,
+                font: {
+                    size: 15
+                }
+            },
+            edges: {
+                font: {
+                    size: 10,
+                    align: 'center'
+                },
+                color: 'red',
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1.2 }
+                },
+                smooth: { enabled: true }
+            },
+            physics: {
+                enabled: true
+            }
+        };
 
-      var network = new vis.Network(container, data, options);
+        var network = new vis.Network(container, data, options);
 
     </script>
-    </body>
-    </html>
-    
+</body>
+
+</html>

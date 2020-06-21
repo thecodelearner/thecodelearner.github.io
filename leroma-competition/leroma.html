@@ -1,52 +1,56 @@
+<html>
 
-    <html>
-    <head>
-      <script type="text/javascript" src="VIS/dist/vis.js"></script>
-      <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    </head>
-    <body>
+<head>
+    <script type="text/javascript" src="VIS/dist/vis.js"></script>
+    <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 
+<body>
+
+
+
+    <img src="freq-dists/leroma-gardenia.png">
     <div id="VIS_draw"></div>
 
     <script type="text/javascript">
-      var nodes = [{'group': 'Event', 'id': 0, 'label': 'Occasions'}, {'group': 'Event', 'id': 19, 'label': 'keyword'}, {'group': 'Event', 'id': 2, 'label': 'Events'}, {'group': 'Event', 'id': 40, 'label': 'Use'}, {'group': 'Event', 'id': 42, 'label': 'Zones'}, {'group': 'Event', 'id': 24, 'label': 'Solitaire'}, {'group': 'Event', 'id': 102, 'label': 'Euphoria'}, {'group': 'Event', 'id': 44, 'label': 'Boho'}, {'group': 'Event', 'id': 34, 'label': 'Us'}, {'group': 'Event', 'id': 36, 'label': 'Blog'}, {'group': 'Event', 'id': 18, 'label': 'Socials'}, {'group': 'Event', 'id': 21, 'label': 'encapsulates rooms'}, {'group': 'Event', 'id': 23, 'label': 'magical'}, {'group': 'Event', 'id': 25, 'label': 'looks'}, {'group': 'Event', 'id': 27, 'label': 'Come'}, {'group': 'Event', 'id': 28, 'label': 'Call'}, {'group': 'Event', 'id': 47, 'label': 'frequency'}, {'group': 'Event', 'id': 30, 'label': 'Service'}, {'group': 'Event', 'id': 32, 'label': 'Company'}, {'group': 'Event', 'id': 38, 'label': 'Terms'}, {'group': 'Event', 'id': 91, 'label': 'Le Roma Gardenia'}, {'group': 'Event', 'id': 77, 'label': 'Location'}, {'group': 'Event', 'id': 94, 'label': 'Gardenia'}, {'group': 'Event', 'id': 106, 'label': 'Bangalore'}, {'group': 'Event', 'id': 99, 'label': 'Leroma Gardenia'}, {'group': 'Event', 'id': 56, 'label': 'aliqua enim ad minim'}, {'group': 'Event', 'id': 83, 'label': 'Organization'}, {'group': 'Event', 'id': 107, 'label': 'Leroma'}, {'group': 'Event', 'id': 60, 'label': 'Luxury'}, {'group': 'Event', 'id': 62, 'label': 'et dolore'}, {'group': 'Event', 'id': 103, 'label': 'Ultra'}, {'group': 'Event', 'id': 70, 'label': 'Le Roma'}, {'group': 'Event', 'id': 72, 'label': 'Regular'}, {'group': 'Event', 'id': 87, 'label': 'Person'}, {'group': 'Event', 'id': 74, 'label': 'Premium Royale Suites Walk'}, {'group': 'Event', 'id': 76, 'label': 'Vanity Room Luxurious Restroom'}, {'group': 'Event', 'id': 98, 'label': 'Staying'}, {'group': 'Event', 'id': 80, 'label': 'Avishek Kedia|'}, {'group': 'Event', 'id': 82, 'label': 'aliqua enim ad minim veniam'}, {'group': 'Event', 'id': 84, 'label': 'quis nostrud'}, {'group': 'Event', 'id': 86, 'label': 'laboris'}];
-      var edges = [{'from': 0, 'label': '', 'to': 19}, {'from': 2, 'label': '', 'to': 19}, {'from': 40, 'label': '', 'to': 19}, {'from': 42, 'label': '', 'to': 19}, {'from': 24, 'label': '', 'to': 19}, {'from': 102, 'label': '', 'to': 19}, {'from': 44, 'label': '', 'to': 19}, {'from': 34, 'label': '', 'to': 19}, {'from': 36, 'label': '', 'to': 19}, {'from': 18, 'label': '', 'to': 19}, {'from': 44, 'label': '', 'to': 21}, {'from': 102, 'label': '', 'to': 23}, {'from': 24, 'label': '', 'to': 25}, {'from': 36, 'label': '', 'to': 27}, {'from': 28, 'label': '', 'to': 47}, {'from': 30, 'label': '', 'to': 47}, {'from': 32, 'label': '', 'to': 47}, {'from': 34, 'label': '', 'to': 47}, {'from': 36, 'label': '', 'to': 47}, {'from': 38, 'label': '', 'to': 47}, {'from': 40, 'label': '', 'to': 47}, {'from': 42, 'label': '', 'to': 47}, {'from': 44, 'label': '', 'to': 47}, {'from': 102, 'label': '', 'to': 47}, {'from': 91, 'label': '', 'to': 77}, {'from': 94, 'label': '', 'to': 77}, {'from': 106, 'label': '', 'to': 77}, {'from': 99, 'label': '', 'to': 77}, {'from': 56, 'label': '', 'to': 83}, {'from': 107, 'label': '', 'to': 77}, {'from': 60, 'label': '', 'to': 83}, {'from': 62, 'label': '', 'to': 83}, {'from': 107, 'label': '', 'to': 83}, {'from': 103, 'label': '', 'to': 83}, {'from': 102, 'label': '', 'to': 77}, {'from': 70, 'label': '', 'to': 83}, {'from': 72, 'label': '', 'to': 87}, {'from': 74, 'label': '', 'to': 83}, {'from': 76, 'label': '', 'to': 77}, {'from': 98, 'label': '', 'to': 87}, {'from': 80, 'label': '', 'to': 87}, {'from': 82, 'label': '', 'to': 83}, {'from': 84, 'label': '', 'to': 87}, {'from': 86, 'label': '', 'to': 87}, {'from': 91, 'label': '', 'to': 106}, {'from': 106, 'label': '', 'to': 91}, {'from': 107, 'label': '', 'to': 94}, {'from': 94, 'label': '', 'to': 107}, {'from': 99, 'label': '', 'to': 98}, {'from': 98, 'label': '', 'to': 99}, {'from': 103, 'label': '', 'to': 102}, {'from': 102, 'label': '', 'to': 103}, {'from': 107, 'label': '', 'to': 106}, {'from': 106, 'label': '', 'to': 107}];
+        var nodes = [{ 'group': 'Event', 'id': 0, 'label': 'Occasions' }, { 'group': 'Event', 'id': 19, 'label': 'keyword' }, { 'group': 'Event', 'id': 2, 'label': 'Events' }, { 'group': 'Event', 'id': 40, 'label': 'Use' }, { 'group': 'Event', 'id': 42, 'label': 'Zones' }, { 'group': 'Event', 'id': 24, 'label': 'Solitaire' }, { 'group': 'Event', 'id': 102, 'label': 'Euphoria' }, { 'group': 'Event', 'id': 44, 'label': 'Boho' }, { 'group': 'Event', 'id': 34, 'label': 'Us' }, { 'group': 'Event', 'id': 36, 'label': 'Blog' }, { 'group': 'Event', 'id': 18, 'label': 'Socials' }, { 'group': 'Event', 'id': 21, 'label': 'encapsulates rooms' }, { 'group': 'Event', 'id': 23, 'label': 'magical' }, { 'group': 'Event', 'id': 25, 'label': 'looks' }, { 'group': 'Event', 'id': 27, 'label': 'Come' }, { 'group': 'Event', 'id': 28, 'label': 'Call' }, { 'group': 'Event', 'id': 47, 'label': 'frequency' }, { 'group': 'Event', 'id': 30, 'label': 'Service' }, { 'group': 'Event', 'id': 32, 'label': 'Company' }, { 'group': 'Event', 'id': 38, 'label': 'Terms' }, { 'group': 'Event', 'id': 91, 'label': 'Le Roma Gardenia' }, { 'group': 'Event', 'id': 77, 'label': 'Location' }, { 'group': 'Event', 'id': 94, 'label': 'Gardenia' }, { 'group': 'Event', 'id': 106, 'label': 'Bangalore' }, { 'group': 'Event', 'id': 99, 'label': 'Leroma Gardenia' }, { 'group': 'Event', 'id': 56, 'label': 'aliqua enim ad minim' }, { 'group': 'Event', 'id': 83, 'label': 'Organization' }, { 'group': 'Event', 'id': 107, 'label': 'Leroma' }, { 'group': 'Event', 'id': 60, 'label': 'Luxury' }, { 'group': 'Event', 'id': 62, 'label': 'et dolore' }, { 'group': 'Event', 'id': 103, 'label': 'Ultra' }, { 'group': 'Event', 'id': 70, 'label': 'Le Roma' }, { 'group': 'Event', 'id': 72, 'label': 'Regular' }, { 'group': 'Event', 'id': 87, 'label': 'Person' }, { 'group': 'Event', 'id': 74, 'label': 'Premium Royale Suites Walk' }, { 'group': 'Event', 'id': 76, 'label': 'Vanity Room Luxurious Restroom' }, { 'group': 'Event', 'id': 98, 'label': 'Staying' }, { 'group': 'Event', 'id': 80, 'label': 'Avishek Kedia|' }, { 'group': 'Event', 'id': 82, 'label': 'aliqua enim ad minim veniam' }, { 'group': 'Event', 'id': 84, 'label': 'quis nostrud' }, { 'group': 'Event', 'id': 86, 'label': 'laboris' }];
+        var edges = [{ 'from': 0, 'label': '', 'to': 19 }, { 'from': 2, 'label': '', 'to': 19 }, { 'from': 40, 'label': '', 'to': 19 }, { 'from': 42, 'label': '', 'to': 19 }, { 'from': 24, 'label': '', 'to': 19 }, { 'from': 102, 'label': '', 'to': 19 }, { 'from': 44, 'label': '', 'to': 19 }, { 'from': 34, 'label': '', 'to': 19 }, { 'from': 36, 'label': '', 'to': 19 }, { 'from': 18, 'label': '', 'to': 19 }, { 'from': 44, 'label': '', 'to': 21 }, { 'from': 102, 'label': '', 'to': 23 }, { 'from': 24, 'label': '', 'to': 25 }, { 'from': 36, 'label': '', 'to': 27 }, { 'from': 28, 'label': '', 'to': 47 }, { 'from': 30, 'label': '', 'to': 47 }, { 'from': 32, 'label': '', 'to': 47 }, { 'from': 34, 'label': '', 'to': 47 }, { 'from': 36, 'label': '', 'to': 47 }, { 'from': 38, 'label': '', 'to': 47 }, { 'from': 40, 'label': '', 'to': 47 }, { 'from': 42, 'label': '', 'to': 47 }, { 'from': 44, 'label': '', 'to': 47 }, { 'from': 102, 'label': '', 'to': 47 }, { 'from': 91, 'label': '', 'to': 77 }, { 'from': 94, 'label': '', 'to': 77 }, { 'from': 106, 'label': '', 'to': 77 }, { 'from': 99, 'label': '', 'to': 77 }, { 'from': 56, 'label': '', 'to': 83 }, { 'from': 107, 'label': '', 'to': 77 }, { 'from': 60, 'label': '', 'to': 83 }, { 'from': 62, 'label': '', 'to': 83 }, { 'from': 107, 'label': '', 'to': 83 }, { 'from': 103, 'label': '', 'to': 83 }, { 'from': 102, 'label': '', 'to': 77 }, { 'from': 70, 'label': '', 'to': 83 }, { 'from': 72, 'label': '', 'to': 87 }, { 'from': 74, 'label': '', 'to': 83 }, { 'from': 76, 'label': '', 'to': 77 }, { 'from': 98, 'label': '', 'to': 87 }, { 'from': 80, 'label': '', 'to': 87 }, { 'from': 82, 'label': '', 'to': 83 }, { 'from': 84, 'label': '', 'to': 87 }, { 'from': 86, 'label': '', 'to': 87 }, { 'from': 91, 'label': '', 'to': 106 }, { 'from': 106, 'label': '', 'to': 91 }, { 'from': 107, 'label': '', 'to': 94 }, { 'from': 94, 'label': '', 'to': 107 }, { 'from': 99, 'label': '', 'to': 98 }, { 'from': 98, 'label': '', 'to': 99 }, { 'from': 103, 'label': '', 'to': 102 }, { 'from': 102, 'label': '', 'to': 103 }, { 'from': 107, 'label': '', 'to': 106 }, { 'from': 106, 'label': '', 'to': 107 }];
 
-      var container = document.getElementById("VIS_draw");
+        var container = document.getElementById("VIS_draw");
 
-      var data = {
-        nodes: nodes,
-        edges: edges
-      };
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
 
-      var options = {
-          nodes: {
-              shape: 'circle',
-              size: 15,
-              font: {
-                  size: 15
-              }
-          },
-          edges: {
-              font: {
-                  size: 10,
-                  align: 'center'
-              },
-              color: 'red',
-              arrows: {
-                  to: {enabled: true, scaleFactor: 1.2}
-              },
-              smooth: {enabled: true}
-          },
-          physics: {
-              enabled: true
-          }
-      };
+        var options = {
+            nodes: {
+                shape: 'circle',
+                size: 15,
+                font: {
+                    size: 15
+                }
+            },
+            edges: {
+                font: {
+                    size: 10,
+                    align: 'center'
+                },
+                color: 'red',
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1.2 }
+                },
+                smooth: { enabled: true }
+            },
+            physics: {
+                enabled: true
+            }
+        };
 
-      var network = new vis.Network(container, data, options);
+        var network = new vis.Network(container, data, options);
 
     </script>
-    </body>
-    </html>
-    
+</body>
+
+</html>
