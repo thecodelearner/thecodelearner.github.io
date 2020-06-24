@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="VIS/dist/vis.js"></script>
+    <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+
+    <img src='./freq-dist/gitstart.png'>
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+        var nodes = [{ 'group': 'Event', 'id': 4, 'label': 'Rights' }, { 'group': 'Event', 'id': 3, 'label': 'keyword' }, { 'group': 'Event', 'id': 6, 'label': 'Reserved' }, { 'group': 'Event', 'id': 7, 'label': 'frequency' }, { 'group': 'Event', 'id': 70, 'label': 'Git Start' }, { 'group': 'Event', 'id': 39, 'label': 'Organization' }, { 'group': 'Event', 'id': 86, 'label': 'Hong Kong' }, { 'group': 'Event', 'id': 45, 'label': 'Location' }, { 'group': 'Event', 'id': 82, 'label': 'San Francisco' }, { 'group': 'Event', 'id': 66, 'label': 'Gitstart' }, { 'group': 'Event', 'id': 84, 'label': 'Bengaluru' }, { 'group': 'Event', 'id': 47, 'label': 'Person' }, { 'group': 'Event', 'id': 63, 'label': 'Digital' }, { 'group': 'Event', 'id': 20, 'label': 'D-Biz Company' }, { 'group': 'Event', 'id': 90, 'label': 'the Innovation and Technology Commission' }, { 'group': 'Event', 'id': 67, 'label': 'India' }, { 'group': 'Event', 'id': 26, 'label': 'the Hong Kong University of Science and Technology' }, { 'group': 'Event', 'id': 91, 'label': 'The Hong Kong Government' }, { 'group': 'Event', 'id': 87, 'label': 'Gitstart Accelerate' }, { 'group': 'Event', 'id': 32, 'label': 'U.S.' }, { 'group': 'Event', 'id': 34, 'label': 'the Git Start' }, { 'group': 'Event', 'id': 36, 'label': 'Unde' }, { 'group': 'Event', 'id': 38, 'label': 'The Custom Movement' }, { 'group': 'Event', 'id': 40, 'label': 'Gen Z' }, { 'group': 'Event', 'id': 42, 'label': 'Stoic' }, { 'group': 'Event', 'id': 44, 'label': 'Dover' }, { 'group': 'Event', 'id': 46, 'label': 'Forbes' }];
+        var edges = [{ 'from': 4, 'label': '', 'to': 3 }, { 'from': 6, 'label': '', 'to': 3 }, { 'from': 4, 'label': '', 'to': 7 }, { 'from': 6, 'label': '', 'to': 7 }, { 'from': 70, 'label': '', 'to': 39 }, { 'from': 86, 'label': '', 'to': 45 }, { 'from': 82, 'label': '', 'to': 45 }, { 'from': 66, 'label': '', 'to': 39 }, { 'from': 84, 'label': '', 'to': 47 }, { 'from': 63, 'label': '', 'to': 39 }, { 'from': 20, 'label': '', 'to': 39 }, { 'from': 90, 'label': '', 'to': 39 }, { 'from': 67, 'label': '', 'to': 45 }, { 'from': 26, 'label': '', 'to': 39 }, { 'from': 91, 'label': '', 'to': 39 }, { 'from': 87, 'label': '', 'to': 39 }, { 'from': 32, 'label': '', 'to': 45 }, { 'from': 34, 'label': '', 'to': 39 }, { 'from': 36, 'label': '', 'to': 45 }, { 'from': 38, 'label': '', 'to': 39 }, { 'from': 40, 'label': '', 'to': 47 }, { 'from': 42, 'label': '', 'to': 45 }, { 'from': 44, 'label': '', 'to': 45 }, { 'from': 46, 'label': '', 'to': 47 }, { 'from': 82, 'label': '', 'to': 86 }, { 'from': 86, 'label': '', 'to': 82 }, { 'from': 82, 'label': '', 'to': 84 }, { 'from': 84, 'label': '', 'to': 82 }, { 'from': 84, 'label': '', 'to': 86 }, { 'from': 86, 'label': '', 'to': 84 }, { 'from': 63, 'label': '', 'to': 86 }, { 'from': 86, 'label': '', 'to': 63 }, { 'from': 67, 'label': '', 'to': 66 }, { 'from': 66, 'label': '', 'to': 67 }, { 'from': 87, 'label': '', 'to': 70 }, { 'from': 70, 'label': '', 'to': 87 }, { 'from': 90, 'label': '', 'to': 86 }, { 'from': 86, 'label': '', 'to': 90 }, { 'from': 87, 'label': '', 'to': 82 }, { 'from': 87, 'label': '', 'to': 84 }, { 'from': 87, 'label': '', 'to': 86 }, { 'from': 82, 'label': '', 'to': 87 }, { 'from': 84, 'label': '', 'to': 87 }, { 'from': 86, 'label': '', 'to': 87 }, { 'from': 91, 'label': '', 'to': 90 }, { 'from': 90, 'label': '', 'to': 91 }];
+
+        var container = document.getElementById("VIS_draw");
+
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+
+        var options = {
+            nodes: {
+                shape: 'circle',
+                size: 15,
+                font: {
+                    size: 15
+                }
+            },
+            edges: {
+                font: {
+                    size: 10,
+                    align: 'center'
+                },
+                color: 'red',
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1.2 }
+                },
+                smooth: { enabled: true }
+            },
+            physics: {
+                enabled: true
+            }
+        };
+
+        var network = new vis.Network(container, data, options);
+
+    </script>
+</body>
+
+</html>
