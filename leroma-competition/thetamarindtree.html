@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="VIS/dist/vis.js"></script>
+    <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <img src="freq-dists/thetamarindtree.png">
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+        var nodes = [{ 'group': 'Event', 'id': 62, 'label': 'Bengaluru' }, { 'group': 'Event', 'id': 15, 'label': 'keyword' }, { 'group': 'Event', 'id': 60, 'label': 'Road' }, { 'group': 'Event', 'id': 58, 'label': 'Main' }, { 'group': 'Event', 'id': 56, 'label': 'Avalahalli' }, { 'group': 'Event', 'id': 54, 'label': 'Tree' }, { 'group': 'Event', 'id': 64, 'label': 'Karnataka' }, { 'group': 'Event', 'id': 80, 'label': 'Tamarind' }, { 'group': 'Event', 'id': 123, 'label': 'India' }, { 'group': 'Event', 'id': 17, 'label': 'been confluence' }, { 'group': 'Event', 'id': 19, 'label': 'is property' }, { 'group': 'Event', 'id': 21, 'label': 'be a' }, { 'group': 'Event', 'id': 27, 'label': 'is' }, { 'group': 'Event', 'id': 29, 'label': 'keeps senses' }, { 'group': 'Event', 'id': 51, 'label': 'is one' }, { 'group': 'Event', 'id': 33, 'label': 'is location' }, { 'group': 'Event', 'id': 35, 'label': 'has variety' }, { 'group': 'Event', 'id': 37, 'label': 'restored' }, { 'group': 'Event', 'id': 39, 'label': 'photoshoots Place' }, { 'group': 'Event', 'id': 41, 'label': 'is venue' }, { 'group': 'Event', 'id': 43, 'label': 'is embodiment' }, { 'group': 'Event', 'id': 45, 'label': 'has heritage' }, { 'group': 'Event', 'id': 47, 'label': 'lets' }, { 'group': 'Event', 'id': 49, 'label': 'is place' }, { 'group': 'Event', 'id': 67, 'label': 'frequency' }, { 'group': 'Event', 'id': 103, 'label': 'Location' }, { 'group': 'Event', 'id': 70, 'label': 'The Tamarind Tree' }, { 'group': 'Event', 'id': 105, 'label': 'Organization' }, { 'group': 'Event', 'id': 72, 'label': 'Basava' }, { 'group': 'Event', 'id': 74, 'label': 'The Colonial Bandstand' }, { 'group': 'Event', 'id': 76, 'label': 'Sheesh Mahal' }, { 'group': 'Event', 'id': 122, 'label': 'Bangalore' }, { 'group': 'Event', 'id': 82, 'label': 'NRI' }, { 'group': 'Event', 'id': 84, 'label': 'Rangastala' }, { 'group': 'Event', 'id': 107, 'label': 'Person' }, { 'group': 'Event', 'id': 86, 'label': 'Vishnu Mantapa' }, { 'group': 'Event', 'id': 119, 'label': 'Artha' }, { 'group': 'Event', 'id': 118, 'label': 'Kama' }, { 'group': 'Event', 'id': 117, 'label': 'Moksha' }, { 'group': 'Event', 'id': 94, 'label': 'Planning and Services Integrated Services' }, { 'group': 'Event', 'id': 96, 'label': 'South Bangalore' }, { 'group': 'Event', 'id': 98, 'label': 'Brides' }, { 'group': 'Event', 'id': 100, 'label': 'the Mehandi Ceremony' }, { 'group': 'Event', 'id': 102, 'label': 'Mehandi' }, { 'group': 'Event', 'id': 104, 'label': 'Board Meetings Organising a conference' }, { 'group': 'Event', 'id': 106, 'label': 'Baby Shower Choosing' }];
+        var edges = [{ 'from': 62, 'label': '', 'to': 15 }, { 'from': 60, 'label': '', 'to': 15 }, { 'from': 58, 'label': '', 'to': 15 }, { 'from': 56, 'label': '', 'to': 15 }, { 'from': 54, 'label': '', 'to': 15 }, { 'from': 64, 'label': '', 'to': 15 }, { 'from': 80, 'label': '', 'to': 15 }, { 'from': 123, 'label': '', 'to': 15 }, { 'from': 54, 'label': '', 'to': 17 }, { 'from': 54, 'label': '', 'to': 19 }, { 'from': 54, 'label': '', 'to': 21 }, { 'from': 54, 'label': '', 'to': 27 }, { 'from': 54, 'label': '', 'to': 27 }, { 'from': 54, 'label': '', 'to': 27 }, { 'from': 54, 'label': '', 'to': 29 }, { 'from': 54, 'label': '', 'to': 51 }, { 'from': 54, 'label': '', 'to': 33 }, { 'from': 54, 'label': '', 'to': 35 }, { 'from': 54, 'label': '', 'to': 37 }, { 'from': 54, 'label': '', 'to': 39 }, { 'from': 54, 'label': '', 'to': 41 }, { 'from': 54, 'label': '', 'to': 43 }, { 'from': 54, 'label': '', 'to': 45 }, { 'from': 54, 'label': '', 'to': 47 }, { 'from': 54, 'label': '', 'to': 49 }, { 'from': 54, 'label': '', 'to': 51 }, { 'from': 80, 'label': '', 'to': 67 }, { 'from': 54, 'label': '', 'to': 67 }, { 'from': 56, 'label': '', 'to': 67 }, { 'from': 58, 'label': '', 'to': 67 }, { 'from': 60, 'label': '', 'to': 67 }, { 'from': 62, 'label': '', 'to': 67 }, { 'from': 64, 'label': '', 'to': 67 }, { 'from': 123, 'label': '', 'to': 67 }, { 'from': 123, 'label': '', 'to': 103 }, { 'from': 70, 'label': '', 'to': 105 }, { 'from': 72, 'label': '', 'to': 105 }, { 'from': 74, 'label': '', 'to': 105 }, { 'from': 76, 'label': '', 'to': 105 }, { 'from': 122, 'label': '', 'to': 103 }, { 'from': 80, 'label': '', 'to': 105 }, { 'from': 82, 'label': '', 'to': 105 }, { 'from': 84, 'label': '', 'to': 107 }, { 'from': 86, 'label': '', 'to': 107 }, { 'from': 119, 'label': '', 'to': 107 }, { 'from': 118, 'label': '', 'to': 107 }, { 'from': 117, 'label': '', 'to': 107 }, { 'from': 94, 'label': '', 'to': 105 }, { 'from': 96, 'label': '', 'to': 103 }, { 'from': 98, 'label': '', 'to': 107 }, { 'from': 100, 'label': '', 'to': 105 }, { 'from': 102, 'label': '', 'to': 103 }, { 'from': 104, 'label': '', 'to': 105 }, { 'from': 106, 'label': '', 'to': 107 }, { 'from': 117, 'label': '', 'to': 119 }, { 'from': 117, 'label': '', 'to': 118 }, { 'from': 119, 'label': '', 'to': 117 }, { 'from': 119, 'label': '', 'to': 118 }, { 'from': 118, 'label': '', 'to': 117 }, { 'from': 118, 'label': '', 'to': 119 }, { 'from': 123, 'label': '', 'to': 122 }, { 'from': 122, 'label': '', 'to': 123 }];
+
+        var container = document.getElementById("VIS_draw");
+
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+
+        var options = {
+            nodes: {
+                shape: 'circle',
+                size: 15,
+                font: {
+                    size: 15
+                }
+            },
+            edges: {
+                font: {
+                    size: 10,
+                    align: 'center'
+                },
+                color: 'red',
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1.2 }
+                },
+                smooth: { enabled: true }
+            },
+            physics: {
+                enabled: true
+            }
+        };
+
+        var network = new vis.Network(container, data, options);
+
+    </script>
+</body>
+
+</html>

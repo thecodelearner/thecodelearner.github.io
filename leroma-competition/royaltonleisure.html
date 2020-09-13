@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="VIS/dist/vis.js"></script>
+    <link href="VIS/dist/vis.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <img src="freq-dists/royaltonleisure.png">
+    <div id="VIS_draw"></div>
+
+    <script type="text/javascript">
+        var nodes = [{ 'group': 'Event', 'id': 12, 'label': 'Road' }, { 'group': 'Event', 'id': 7, 'label': 'keyword' }, { 'group': 'Event', 'id': 10, 'label': 'Main' }, { 'group': 'Event', 'id': 8, 'label': 'Bannerghatta' }, { 'group': 'Event', 'id': 39, 'label': 'Bangalore' }, { 'group': 'Event', 'id': 15, 'label': 'frequency' }, { 'group': 'Event', 'id': 38, 'label': 'Royalton Leisure' }, { 'group': 'Event', 'id': 35, 'label': 'Organization' }, { 'group': 'Event', 'id': 19, 'label': 'Location' }, { 'group': 'Event', 'id': 20, 'label': 'Weddings, Birthdays, Anniversaries, Life Events' }, { 'group': 'Event', 'id': 22, 'label': 'the Banquet Halls' }, { 'group': 'Event', 'id': 24, 'label': 'Birthdays, Anniversaries, Naming Ceremonies' }, { 'group': 'Event', 'id': 26, 'label': 'Lava' }, { 'group': 'Event', 'id': 28, 'label': 'The Aria Lawns' }, { 'group': 'Event', 'id': 33, 'label': 'Person' }, { 'group': 'Event', 'id': 43, 'label': 'Jiva' }, { 'group': 'Event', 'id': 42, 'label': 'Lawns' }, { 'group': 'Event', 'id': 34, 'label': 'The Banquet Hall' }];
+        var edges = [{ 'from': 12, 'label': '', 'to': 7 }, { 'from': 10, 'label': '', 'to': 7 }, { 'from': 8, 'label': '', 'to': 7 }, { 'from': 39, 'label': '', 'to': 7 }, { 'from': 8, 'label': '', 'to': 15 }, { 'from': 10, 'label': '', 'to': 15 }, { 'from': 12, 'label': '', 'to': 15 }, { 'from': 39, 'label': '', 'to': 15 }, { 'from': 38, 'label': '', 'to': 35 }, { 'from': 39, 'label': '', 'to': 19 }, { 'from': 20, 'label': '', 'to': 35 }, { 'from': 22, 'label': '', 'to': 35 }, { 'from': 24, 'label': '', 'to': 35 }, { 'from': 26, 'label': '', 'to': 35 }, { 'from': 28, 'label': '', 'to': 33 }, { 'from': 43, 'label': '', 'to': 33 }, { 'from': 42, 'label': '', 'to': 33 }, { 'from': 34, 'label': '', 'to': 35 }, { 'from': 39, 'label': '', 'to': 38 }, { 'from': 38, 'label': '', 'to': 39 }, { 'from': 43, 'label': '', 'to': 42 }, { 'from': 42, 'label': '', 'to': 43 }];
+
+        var container = document.getElementById("VIS_draw");
+
+        var data = {
+            nodes: nodes,
+            edges: edges
+        };
+
+        var options = {
+            nodes: {
+                shape: 'circle',
+                size: 15,
+                font: {
+                    size: 15
+                }
+            },
+            edges: {
+                font: {
+                    size: 10,
+                    align: 'center'
+                },
+                color: 'red',
+                arrows: {
+                    to: { enabled: true, scaleFactor: 1.2 }
+                },
+                smooth: { enabled: true }
+            },
+            physics: {
+                enabled: true
+            }
+        };
+
+        var network = new vis.Network(container, data, options);
+
+    </script>
+</body>
+
+</html>
